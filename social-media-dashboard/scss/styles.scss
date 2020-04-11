@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
+
+// variables
+
+$bodyBg: hsl(230, 17%, 14%);
+$plain-white:hsl(0, 0%, 100%);
+$grey-text:hsl(228, 34%, 66%);
+$cardBg:hsl(228, 28%, 20%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: $bodyBg;
+  color: $plain-white;
+}
+
+.dashboard {
+  .content {
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      color: $grey-text;
+    }
+  }
+
+  .social-media-cards {
+    display: flex;
+    .card {
+      width: 250px;
+      height: 200px;
+      background-color: $cardBg;
+    }
+  }
+}
